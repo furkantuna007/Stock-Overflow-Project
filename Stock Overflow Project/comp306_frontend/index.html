@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="user.css" />
+    <script src="https://cdn.socket.io/4.2.0/socket.io.min.js"></script>
+  </head>
+  <body>
+    <div id="user-input">
+      <div>
+        <label for="username">Enter your username:</label>
+        <input type="text" id="username" name="username" />
+      </div>
+      <div>
+        <label for="balance">Enter your balance:</label>
+        <input type="number" id="balance" name="balance" />
+      </div>
+
+      <button id="submit">Submit</button>
+    </div>
+    <div id="stock-page" style="display: none">
+      <h1>Welcome to the stock page!</h1>
+      <div id="stock-page" class="fixed-info">
+        <h1>Welcome, <span id="username-display"></span>!</h1>
+        <p>BALANCE: <span id="balance-display"></span> $</p>
+        <p>TOTAL PRODUCTS: <span id="product-count-display"></span></p>
+      </div>
+      <button id="hide-products" style="display: none;">X</button>
+      <div id="product-table-container" style="display: none; height: 800px; ">
+        <table id="product-table">
+          <thead>
+            <tr>
+              <th>Product ID</th>
+              <th>Category ID</th>
+              <th>Brand Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <button id="show-products">Show Products</button>
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

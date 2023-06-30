@@ -1,0 +1,116 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+html {
+    overflow: auto;
+    height: 100vh;
+    margin: 0;
+    background-size: 200% 200%;
+    background-image: linear-gradient(45deg, #ff0066, #ff00cc, #6600ff, #0066ff);
+    animation: gradient 5s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#user-input {
+    text-align: center;
+}
+
+label {
+    font-size: 2rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+input[type="text"], input[type="number"] {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+button {
+    font-size: 2rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: #6600ff;
+    border-radius: 20px;
+    cursor: pointer;
+    animation: rotate 5s linear infinite;
+}
+
+
+#stock-page {
+    text-align: center;
+}
+
+.fixed-info {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px;
+}
+
+.category-1 {
+background-color: #1976c6;
+}
+  
+.category-2 {
+background-color: #a05f08;
+}
+
+.category-3 {
+background-color: #a0086d;
+}
+
+.category-4 {
+background-color: #81dd93;
+}
+
+.category-5 {
+background-color: #13422c;
+}
+
+.category-6 {
+background-color: #a7c220;
+}
+
+.category-7 {
+background-color: #eb1818;
+}
+
+
+  
+
+  
+  
